@@ -1,6 +1,6 @@
 <?php
-include_once './Entidad/usuarioEntidad.php';
-include_once './Modelo/usuarioModelo.php';
+include_once '../Entidad/usuarioEntidad.php';
+include_once '../Modelo/usuarioModelo.php';
 
 
 $usuario = $_POST['usuario'];
