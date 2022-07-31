@@ -7,6 +7,7 @@ $(document).ready(function(){+
             dataType: 'JSON',
             data: null
         }).done(function(json){
+            var usuario = $('#usuario').val;
             if (json==0){
                 window.location.href = './index.html';
             }
