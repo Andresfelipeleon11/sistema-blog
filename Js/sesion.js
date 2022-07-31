@@ -1,7 +1,7 @@
 $(document).ready(function(){
    $(document).on('click','#btnSesion', function(){
     $.ajax({
-        url: './controlador/sesionCrear.php',
+        url: './Controlador/sesionCrear.php',
         method: 'POST',
         dataType: 'JSON',
         data: $('#formulario').serialize()
