@@ -9,8 +9,10 @@ $(document).ready(function(){
         console.log('entraste')
         console.log(json)
     if(json !=0){
-        window.location =  "vista/inicio.php";
-        alert('bienvenido')
+        json.forEach(element => {
+            window.location =  "vista/inicio.php";
+            alert('bienvenido '+element.nombre)
+        });
     }
     else{
         alert('error')

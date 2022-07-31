@@ -2,4 +2,4 @@
 include_once 'menu.php'
 ?>
 
-<h1>inicoio</h1>
+<h1 id= 'mensaje' value=""></h1>
