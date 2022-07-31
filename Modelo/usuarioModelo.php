@@ -3,11 +3,11 @@ namespace Modelo;
 
 use PDO;
 
-include_once './Entorno/conexion.php';
+include_once '../Entorno/conexion.php';
 
 class Usuario{
     private $usuario;
-    private $passord;
+    private $password;
     public $con;
 
     public function __construct(\Entidad\Usuario $usuarioE)
@@ -18,7 +18,7 @@ class Usuario{
     }
     public function Crear(){
         $sql = "SELECT * FROM usuario WHERE usuario=:usuario AND contrasena=:contrasena";
-        $result = $this->con->prepare($sql);
+        $result = $this->con->conexion->prepare($sql);
         $result->bindParam(':usuario', $this->usuario);
         $result->bindParam(':contrasena', $this->password);
         $result->execute();
