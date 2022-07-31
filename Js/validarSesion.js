@@ -2,7 +2,7 @@ $(document).ready(function(){+
     validarSesion();
     function validarSesion(){
         $.ajax({
-            url: './controlador/sesionBuscar.php',
+            url: '../controlador/sesionBuscar.php',
             method: 'POST',
             dataType: 'JSON',
             data: null
