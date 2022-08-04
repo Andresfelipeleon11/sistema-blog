@@ -2,4 +2,23 @@
 include_once 'menu.php'
 ?>
 
-<h1 id= 'mensaje' value=""></h1>
+<div class="container">
+    <div class="row-tarjeta">
+        <form id="contenido">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Blog</h3>
+                </div>
+                <div class="card-body">
+                    <textarea name="mensaje" id="" cols="70" rows="10"></textarea>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="button" value="Publicar" class="btn btn-primary" id="btnPublicar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../Js/blogPublicar.js"></script>
+        </form>
+    </div>
+</div>
