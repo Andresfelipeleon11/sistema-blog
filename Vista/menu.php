@@ -7,6 +7,7 @@
     <title>Blog</title>
     <link rel="stylesheet" href="../Css/bootstrap.css">
     <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/inicio.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
