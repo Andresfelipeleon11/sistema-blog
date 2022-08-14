@@ -4,7 +4,7 @@ include_once 'menu.php'
 
 <div class="container">
     <div class="row-tarjeta">
-        <form id="contenido">
+        <form id="formPublicar">
             <div class="card">
                 <div class="card-header">
                     <h3>Blog</h3>
@@ -18,7 +18,7 @@ include_once 'menu.php'
                     </div>
                 </div>
             </div>
-            <script src="../Js/blogPublicar.js"></script>
         </form>
+        <script src="../Js/blogPublicar.js"></script>
     </div>
 </div>

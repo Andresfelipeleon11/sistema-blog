@@ -1,5 +1,6 @@
 $(document).ready(function(){
    $(document).on('click','#btnSesion', function(){
+    
     $.ajax({
         url: './Controlador/sesionCrear.php',
         method: 'POST',

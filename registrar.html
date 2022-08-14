@@ -8,36 +8,45 @@
     <link rel="stylesheet" href="./Css/bootstrap.css">
     <link rel="stylesheet" href="./Css/bootstrap.min.css">
     <link rel="stylesheet" href="./Css/index.css">
-    <title>Iniciar Sesion</title>
+    <title>registro</title>
 </head>
 <body>
     <div class="container">
         <div class="card">
            <div class="card-header">
-                <h3 class="text-center">Iniciar Sesion</h3>
+                <h3 class="text-center">registro</h3>
            </div>
            <div class="card-body">
-            <form id="formulario">
+            <form id="frmPersona">
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label>Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="apellido" name="apellido">
+                </div>
                 <div class="form-group">
                     <label>usuario:</label>
-                    <input type="text" class="form-control" id="usuario" placeholder="usuario" name="usuario">
+                    <input type="usuario" class="form-control" id="usuario" placeholder="usuario" name="usuario">
                 </div>
                 <div class="form-group">
                     <label>contraseña:</label>
-                    <input type="password" class="form-control" id="contrasena" placeholder="contrasena" name="contrasena">
-            </form>
+                    <input type="password" class="form-control" id="contrasena" placeholder="contraseña" name="contrasena">
+                </div>
            </div>
            &nbsp;
            <div class="form-group">
-            <button id="btnSesion" class="btn btn-success">Ingresar</button> &nbsp;
+            <button id="btnRegistrar" class="btn btn-success">Registrar</button> &nbsp;
+            <a type="button" class="btn btn-primary" href="index.html">volver</a>
            </div>
         </div>
- <p>¿No tienes cuenta deseas registrarte?, click aqui para registrarte <a href="registrar.html">Registrar</a></p>
+    </form>
     </div>
 </body>
 <script src="./Js/bootstrap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./Js/sesion.js"></script>
+<script src="./Js/persona.js"></script>
 
 </html>

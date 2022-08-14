@@ -12,6 +12,7 @@ class Blog{
     public function getIdBlog()
     {
         return $this->idBlog;
+        
     }
 
     /**

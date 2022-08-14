@@ -12,13 +12,16 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">LleoBlog</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav  ms-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Inicio</a>
+      </li>
+      <li>
+        <a class="btn btn-danger" type="button" id="cerrarSesion">Cerrar sesion</a>
       </li>
     </ul>
   </div>

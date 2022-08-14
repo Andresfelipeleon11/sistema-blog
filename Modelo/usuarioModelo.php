@@ -8,12 +8,16 @@ include_once '../Entorno/conexion.php';
 class Usuario{
     private $usuario;
     private $password;
+    private $nombre;
+    private $apellido;
     public $con;
 
     public function __construct(\Entidad\Usuario $usuarioE)
     {
         $this->usuario = $usuarioE->getUsuario();
         $this->password = $usuarioE->getContrasena();
+        $this->nombre = $usuarioE->getNombre();
+        $this->apellido = $usuarioE->getApellido();
         $this->con = new \Conexion();
     }
     public function Crear(){
@@ -32,6 +36,17 @@ class Usuario{
                 $resultado = 0;
             }
             return $resultado;
+    }
+
+    public function registrarUsuario(){
+    $sql = "INSERT INTO usuario VALUES (NULL, :usuario, :contrasena, :nombre, :apellido);";
+    $result = $this->con->conexion->prepare($sql);
+    $result->bindParam(':usuario', $this->usuario);
+    $result->bindParam(':contrasena', $this->password);
+    $result->bindParam(':nombre', $this->nombre);
+    $result->bindParam(':apellido', $this->apellido);
+    $result->execute();
+    return "Creado con exito";
     }
 }
 
