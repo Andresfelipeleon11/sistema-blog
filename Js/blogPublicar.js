@@ -5,7 +5,8 @@ $(document).ready(function(){
             type: 'POST',
             data: $('#formPublicar').serialize()
         }).done(function(json){
-            console.log('publicado')
+            $('#publicacion').html('<div class="alert alert-success" role="alert">Publicacion creada correctamente</div>')
+            setInterval('window.location.reload()', 1000);
             console.log(json)
           //  location.reload()
         }).fail(function(json){

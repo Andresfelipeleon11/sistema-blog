@@ -16,7 +16,8 @@ $(document).ready(function(){
         });
     }
     else{
-        alert('error')
+       $('#mensaje').html('<div class="alert alert-danger" role="alert">Usuario o contraseña incorrectos</div>')
+       setInterval('window.location.reload()', 1000);
     }
     }).fail(function(error){
         console.log('error')
