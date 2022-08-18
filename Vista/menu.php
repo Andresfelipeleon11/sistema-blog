@@ -18,7 +18,7 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav  ms-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio</a>
+        <a class="nav-link" href="./inicio.php">Inicio</a>
       </li>
       <li>
         <a class="btn btn-danger" type="button" id="cerrarSesion">Cerrar sesion</a>

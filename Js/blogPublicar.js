@@ -1,5 +1,10 @@
 $(document).ready(function(){
     $(document).on('click','#btnPublicar', function(){
+        blog = $('#contenido-blog').val();
+        if(blog == ''){
+            alert('El blog no puede estar vacio');
+            return false;
+        }
         $.ajax({
             url: '../controlador/blogCrear.php',
             type: 'POST',

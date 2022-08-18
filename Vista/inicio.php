@@ -10,7 +10,7 @@ include_once 'menu.php'
                     <h3 class="text-center">Blog</h3>
                 </div>
                 <div class="card-body">
-                    <textarea name="mensaje" id="" cols="70" rows="10"></textarea>
+                    <textarea name="mensaje" id="contenido-blog" cols="70" rows="10"></textarea>
                     <div class="row">
                            &nbsp;
                         <p id="publicacion"></p>
