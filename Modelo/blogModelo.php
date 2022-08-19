@@ -20,6 +20,14 @@ class Blog{
         $result->execute();
         return "Creado con exito";
     }
+    public function Listar(){
+        $sql = "SELECT * FROM blog";
+        $result = $this->con->conexion->prepare($sql);
+        $result->execute();
+        $respuesta = $result->fetchAll();
+        return $respuesta;
+        
+    }
 
 }
 

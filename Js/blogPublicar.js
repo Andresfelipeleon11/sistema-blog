@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    listarPublicaciones();
     $(document).on('click','#btnPublicar', function(){
         blog = $('#contenido-blog').val();
         if(blog == ''){
@@ -18,4 +19,21 @@ $(document).ready(function(){
             console.log('error')
         })
     })
+
+    function listarPublicaciones(){
+        $.ajax({
+            url: '../controlador/listarMensajes.php',
+            method: 'POST',
+            dataType : 'JSON',
+            data: $('#mensajes').serialize()
+        }).done(function(json){
+           console.log(json)
+           var tabla 
+           json.forEach(Element => {
+                tabla += '<tr>'+
+                '<td>'+Element.mensaje+'</td>'
+           })
+            $('#tabla-persona').html(tabla);
+        })
+    }
 })

@@ -21,6 +21,9 @@
         <a class="nav-link" href="./inicio.php">Inicio</a>
       </li>
       <li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./mensajes.php">Mensajes</a>
+      </li>
         <a class="btn btn-danger" type="button" id="cerrarSesion">Cerrar sesion</a>
       </li>
     </ul>
