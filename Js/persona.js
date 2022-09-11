@@ -5,7 +5,8 @@ $(document).ready(function(){
         usuario=  $('#usuario').val('')
         contrasena = $('#contrasena').val('');
         if(nombre == '' || apellido == '' || usuario == '' || contrasena == ''){
-            alert('Por favor llene todos los campos');
+           $('#mensaje').html('<div class="alert alert-danger" role="alert">Tienes que completar todos los campos</div>')
+           setInterval('window.location.reload()',1000)
             return false;
         }
         $.ajax({

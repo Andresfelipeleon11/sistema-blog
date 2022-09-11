@@ -3,7 +3,8 @@ $(document).ready(function(){
     $(document).on('click','#btnPublicar', function(){
         blog = $('#contenido-blog').val();
         if(blog == ''){
-            alert('El blog no puede estar vacio');
+            $('#publicacion').html('<div class="alert alert-danger" role="alert">Usuario ingrese contenido en el blog</div>')
+            setInterval('window.location.reload()', 1000);
             return false;
         }
         $.ajax({

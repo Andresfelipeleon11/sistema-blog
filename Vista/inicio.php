@@ -19,6 +19,7 @@ include_once 'menu.php'
                             <input type="button" value="Publicar" class="btn btn-primary" id="btnPublicar">
                         </div>
                     </div>
+                    <p id="publicacion"></p>
                 </div>
             </div>
         </form>

@@ -1,5 +1,5 @@
 .card{
-    margin-top: 120px;
+    margin-top: 98px;
     width: 424px;
     margin-left: 312px;
     border-color: black;
@@ -32,4 +32,8 @@
 
 label{
     padding: 2px;
+}
+
+.div-botones{
+    margin-left: 126px;
 }
