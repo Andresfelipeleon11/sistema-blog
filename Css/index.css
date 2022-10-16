@@ -37,3 +37,45 @@ label{
 .div-botones{
     margin-left: 126px;
 }
+
+@media only screen and (max-width: 767px){
+    .card{
+        margin-top: 98px;
+        width: 424px;
+        margin-left: 76px;
+        border-color: black;
+        border-width: 1px;
+        background-color: snow;
+    }
+}
+@media only screen and (max-width: 300px){
+    .card{
+        margin-top: 98px;
+        width: 424px;
+        margin-left: 90px;
+        border-color: black;
+        border-width: 1px;
+        background-color: snow;
+    }
+}
+@media only screen and (max-width: 320px){
+    .card{
+        margin-top: 98px;
+        width: 424px;
+        margin-left: -1px;
+        border-color: black;
+        border-width: 1px;
+        background-color: snow;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .card{
+        margin-top: 98px;
+        width: 424px;
+        margin-left: 22px;
+        border-color: black;
+        border-width: 1px;
+        background-color: snow;
+    }
+}
